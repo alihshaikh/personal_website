@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet');
+
+body {
+    background-color: #221E1E;
+    color: #ffffff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    margin: 0;
+    transition: background-color 0.3s;
+
+}
+
+.blue {
+    color: blue;
+}
+
+.navbar-custom {
+    background-color: #6D5F5F;
+}
+
+.switch {
+    background-color: #221E1E;
+    color: white;
+    border-color: #221E1E;
+}
+.dark-mode {
+    background-color: #f8e4cc;
+    color: black;
+    transition: opacity 0.5s linear;
+    transition: background-color 0.3s;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(0);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.profileImage {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    overflow: hidden;
+    background-color: blue;
+    /* commented for demo
+    float: left;
+    margin-left: 125px;
+    margin-top: 20px;
+    */
+    
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.card {
+    color: white;
+}
+
+.projectCards {
+    display: flex;
+}
+
+.card {
+    margin-left: 10px;
+}
+
+.card:nth-child(0) {
+    transition-delay: 50ms;
+}
+
+.card:nth-child(1) {
+    transition-delay: 75ms;
+}
+.card:nth-child(2) {
+    transition-delay: 100ms;
+}
